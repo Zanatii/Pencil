@@ -1,0 +1,1 @@
+{"detail":"Claude's response did not match the expected {\"summary\": str, \"description\": str, \"acceptance_criteria\": [str], \"story_type\": \"Business\"|\"Technical\"} schema"}

@@ -1,0 +1,35 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\M.Zanaty\\PO Agent']
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+INFO:     Started reloader process [40676] using StatReload
+INFO:     Started server process [37876]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59299 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60659 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58449 - "GET /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53850 - "GET /runs/dc5826f0-7089-485b-a0f0-daaccb240fc7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53980 - "GET /runs/dc5826f0-7089-485b-a0f0-daaccb240fc7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53981 - "PUT /runs/dc5826f0-7089-485b-a0f0-daaccb240fc7/division HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60321 - "POST /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60321 - "GET /runs/b97d54c1-d562-4d95-b4da-6b3e13682b4c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60321 - "GET /runs/b97d54c1-d562-4d95-b4da-6b3e13682b4c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51448 - "POST /runs/b97d54c1-d562-4d95-b4da-6b3e13682b4c/divide HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51448 - "GET /runs/b97d54c1-d562-4d95-b4da-6b3e13682b4c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "POST /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /runs/06faf415-bbda-4d49-b2af-2f96152749c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54294 - "GET /runs/06faf415-bbda-4d49-b2af-2f96152749c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51846 - "POST /runs/06faf415-bbda-4d49-b2af-2f96152749c8/divide HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51846 - "GET /runs/06faf415-bbda-4d49-b2af-2f96152749c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64140 - "OPTIONS /runs/06faf415-bbda-4d49-b2af-2f96152749c8/division HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64140 - "PUT /runs/06faf415-bbda-4d49-b2af-2f96152749c8/division HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64140 - "GET /runs/06faf415-bbda-4d49-b2af-2f96152749c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64140 - "POST /runs/06faf415-bbda-4d49-b2af-2f96152749c8/stories/DIV-001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49745 - "POST /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49745 - "GET /runs/74e6aa95-01db-4ca8-953b-8010ae18fdbd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58031 - "GET /runs/74e6aa95-01db-4ca8-953b-8010ae18fdbd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59148 - "POST /runs/74e6aa95-01db-4ca8-953b-8010ae18fdbd/divide HTTP/1.1" 502 Bad Gateway
+WARNING:  StatReload detected changes in 'po_agent\ingest\extractors.py'. Reloading...
+ INFO:     127.0.0.1:64654 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59794 - "POST /runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54303 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58217 - "POST /runs HTTP/1.1" 200 OK

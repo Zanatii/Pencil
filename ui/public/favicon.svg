@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="pencilGradient" gradientUnits="userSpaceOnUse" x1="2" y1="15.5" x2="29" y2="15.5">
+      <stop offset="0%" stop-color="#7C6FF2" />
+      <stop offset="100%" stop-color="#3FE0C5" />
+    </linearGradient>
+  </defs>
+  <g transform="rotate(45 16 16)" fill="url(#pencilGradient)">
+    <rect x="2" y="12" width="5" height="7" rx="2" />
+    <rect x="6" y="12" width="16" height="7" />
+    <path d="M22 12 L29 15.5 L22 19 Z" />
+  </g>
+</svg>

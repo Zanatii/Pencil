@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Native <button> uses cursor: default in every browser's UA stylesheet —
+   unlike <a href>, it does NOT get a pointer cursor for free, and
+   Tailwind's Preflight reset doesn't add one either. Rather than adding
+   cursor-pointer to every individual button/clickable div one-by-one, one
+   global rule covers all of them (including custom div-based buttons via
+   [role="button"], e.g. the file-upload dropzone).
+   :where() is what makes this safe to layer under Tailwind: it always
+   contributes zero specificity, so a plain `cursor-pointer` class (or the
+   deliberate `cursor-text`/`cursor-not-allowed` overrides already used on
+   the click-to-edit fields and disabled buttons) still wins outright
+   rather than fighting this rule for precedence. */
+button:where(:not(:disabled)),
+[role="button"]:where(:not([aria-disabled="true"])),
+a[href] {
+  cursor: pointer;
+}
+
+/* Thin, indigo-tinted scrollbar for internal-scroll containers (modals,
+   scrollable panels) — the default OS/browser scrollbar reads jarringly
+   against the void/glass theme otherwise. Firefox via scrollbar-*
+   properties, Chromium/Safari via ::-webkit-scrollbar. No Tailwind utility
+   covers this, so it's plain CSS applied via the .themed-scroll class. */
+.themed-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 111, 242, 0.5) transparent;
+}
+
+.themed-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.themed-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.themed-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(124, 111, 242, 0.45);
+  border-radius: 9999px;
+}
+
+.themed-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(124, 111, 242, 0.7);
+}
